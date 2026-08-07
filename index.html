@@ -21,7 +21,7 @@
             max-width: 800px;
             margin: 0 auto;
             display: flex;
-            p {
+            p.autor {
                 font-weight: bold;
             }
         }
@@ -30,7 +30,7 @@
             width: 80px;
             height: 80px;
         }
-    </style>
+    </style>     
 </head>
 <body>
     <header>
@@ -41,9 +41,18 @@
         <img src="floresta.png" alt="animais na floresta">
         <div>
             <h2>exercicio de aula do 1B </h2>
-            <p>Por: Vinícius</p>
+            <p class="autor">Por: Vinícius</p>
             <p>este site é um exercicio da aula de educação digital</p>
+            <button> 💯<span>0</span><button>
         </div>
    <Main>
-<body>  
+<body> 
+<script>
+    const botao = document.querySelector ("button");
+    botao.addEventListener ("click", botaoClicado);
+    function botaoClicado () { 
+        let texto = botao.querySelector ("span");
+        texto.textContent++;
+    }
+</script>
 <html>
