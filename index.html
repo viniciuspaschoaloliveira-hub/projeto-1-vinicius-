@@ -43,16 +43,20 @@
             <h2>exercicio de aula do 1B </h2>
             <p class="autor">Por: Vinícius</p>
             <p>este site é um exercicio da aula de educação digital</p>
-            <button> 💯<span>0</span><button>
+            <button> 🔥<span>0</span><button>
+            <button> 👎<span>0</span><button>
+
         </div>
    <Main>
 <body> 
 <script>
-    const botao = document.querySelector ("button");
-    botao.addEventListener ("click", botaoClicado);
-    function botaoClicado () { 
+    const botoes = document.querySelector ("button");
+    botoes.forEach(function(botao)) {
+           botao.addEventListener ("click", botaoClicado);
+        function botaoClicado () { 
         let texto = botao.querySelector ("span");
         texto.textContent++;
+    }
     }
 </script>
 <html>
